@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-19T14:20:28.877Z</updated>
+  <updated>2020-05-19T14:21:05.468Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="http://yoursite.com/2020/05/19/hello-world/"/>
     <id>http://yoursite.com/2020/05/19/hello-world/</id>
-    <published>2020-05-19T14:20:28.877Z</published>
-    <updated>2020-05-19T14:20:28.877Z</updated>
+    <published>2020-05-19T14:21:05.468Z</published>
+    <updated>2020-05-19T14:21:05.468Z</updated>
     
     <summary type="html">
     
@@ -44,7 +44,7 @@
     <link href="http://yoursite.com/2019/11/02/test/"/>
     <id>http://yoursite.com/2019/11/02/test/</id>
     <published>2019-11-02T20:52:00.000Z</published>
-    <updated>2020-05-19T14:20:28.877Z</updated>
+    <updated>2020-05-19T14:21:05.468Z</updated>
     
     <summary type="html">
     
