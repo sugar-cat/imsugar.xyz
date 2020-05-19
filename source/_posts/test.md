@@ -22,3 +22,7 @@ body::before {
     background-image: url(/images/bg_1.jpg);
 }
 ```
+## 清除主题缓存
+` git rm -rf --cached themes/hexo-theme-typography`
+## 重新添加到仓库
+` git add themes/hexo-theme-typography/*`
