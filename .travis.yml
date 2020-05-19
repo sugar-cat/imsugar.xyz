@@ -2,12 +2,28 @@ sudo: false
 language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
-cache: npm
+# cache: npm
+install:
+  - yarn  #安装hexo及插件
+
+before_script:
+  - cd themes/hexo-theme-typography
+  - yarn
+  - cd ../..
+
+script:
+  - hexo cl  #清除
+  - hexo g  #生成
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
 branches:
   only:
     - master # build master branch only
-script:
-  - hexo generate # generate static files
+# script:
+#   - hexo generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
