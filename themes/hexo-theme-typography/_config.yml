@@ -1,12 +1,12 @@
-title_primary: "猫与向日葵" # the bigger text
-title_secondary: "浊以静之徐清，安以动之徐生" # the smaller text
+title_primary: "糖猫的夏天" # the bigger text
+title_secondary: "你问我全世界哪里最美，答案是你身边" # the smaller text
 keywords:
 
-twitter: sugar
-rss: atom.xml
+twitter: #sugar
+rss: #atom.xml
 weibo: #username/id
 instagram: #username
-github: journey-ad
+github: sugar-cat
 
 # Choose the comment service according to your need.
 # Please do not use the two services at the same time.
@@ -14,13 +14,13 @@ livere: # [data-uid] on livere.com
 disqus: # [short_name] on disqus.com
 dove: # For fun ONLY. Set to true to 'disable' comments on your site.
 valine: true
-valine_appid: 'CaQKuPQDfnfPFUkTw6MMt8ME-gzGzoHsz'
-valine_appkey: 'uWuwGS1xiIwh3zHKENc7ubyL'
+valine_appid: 'ivKXN7cYkw8io7c8QWxCV3Cg-gzGzoHsz'
+valine_appkey: 'ScJx4OsdyFyPVhOWMkSMRVsg'
 
 # Set true to show the page indicator.
 showPageCount: true
 
-# Set true to show category or tags behind post titles
+# Set true to show catego.ry or tags behind post titles
 showCategories: true
 showTags: true
 

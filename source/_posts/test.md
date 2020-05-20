@@ -9,7 +9,7 @@ urlname: ripping-artstation-models
 # 测试页面
 `git clone https://github.com/journey-ad/hexo-theme-typography themes/hexo-theme-typography`
 
-```
+``` html
 body::before {
     content: "";
     top: 0;
