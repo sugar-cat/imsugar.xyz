@@ -3,7 +3,7 @@ title: 测试数据
 date: 2019-11-02 20:52:00
 categories: code
 tags: [数据集,方案,学习]
-urlname: ripping-artstation-models
+<!-- urlname: ripping-artstation-models -->
 ---
 
 # 测试页面
