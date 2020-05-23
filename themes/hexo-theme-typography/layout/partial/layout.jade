@@ -5,7 +5,8 @@ html(lang="zh-CN")
         include head
 
     body
-        span.donate-address 你是我人世间💓最契合浪漫的因果✨
+        //- 插入一言到全局左下角
+        span.donate-address#hitokoto 
         div#stage.container
             div.row
                 include sidebar
@@ -22,4 +23,4 @@ html(lang="zh-CN")
         script(src= url_for('js/jquery.appear.js'))
         script(src= url_for('js/google-analytics.js'))
         script(src= url_for('js/typography.min.js'))
-
+        script(src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer)
