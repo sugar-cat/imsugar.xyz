@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://imsugar.top/"/>
-  <updated>2020-05-23T13:27:31.369Z</updated>
+  <updated>2020-05-24T05:54:59.664Z</updated>
   <id>https://imsugar.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>个人博客</title>
-    <link href="https://imsugar.top/2020/05/22/about/"/>
-    <id>https://imsugar.top/2020/05/22/about/</id>
-    <published>2020-05-22T00:00:00.000Z</published>
-    <updated>2020-05-23T13:27:31.369Z</updated>
+    <title>这个夏日</title>
+    <link href="https://imsugar.top/2020/05/24/summer/"/>
+    <id>https://imsugar.top/2020/05/24/summer/</id>
+    <published>2020-05-24T00:00:00.000Z</published>
+    <updated>2020-05-24T05:54:59.664Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,45 @@
       
         
         
-          &lt;h2 id=&quot;关于博客&quot;&gt;&lt;a href=&quot;#关于博客&quot; class=&quot;headerlink&quot; title=&quot;关于博客&quot;&gt;&lt;/a&gt;关于博客&lt;/h2&gt;&lt;p&gt;博客已经正式上线运行~&lt;/p&gt;
-&lt;h4 id=&quot;个人说明-✨&quot;&gt;&lt;a href=&quot;#个人说明-✨&quot;
+          &lt;blockquote&gt;
+&lt;p&gt;前言：&lt;br&gt;没有一天会如此绚烂~&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;div class=&quot;cplayer-template&quot;
+      id=&quot;cplayer-28724626&quot;
+     
+        
+      
+    
+    </summary>
+    
+    
+      <category term="sweety" scheme="https://imsugar.top/categories/sweety/"/>
+    
+    
+      <category term="随笔" scheme="https://imsugar.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人博客</title>
+    <link href="https://imsugar.top/2020/05/22/about/"/>
+    <id>https://imsugar.top/2020/05/22/about/</id>
+    <published>2020-05-22T00:00:00.000Z</published>
+    <updated>2020-05-24T05:54:59.664Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前言：找了许久，敲定hexo-theme-typography，我个人更偏向这个简约风格。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;div class=&quot;cplayer-template&quot;
+     
         
       
     
@@ -49,7 +86,7 @@
     <link href="https://imsugar.top/2020/05/20/update/"/>
     <id>https://imsugar.top/2020/05/20/update/</id>
     <published>2020-05-20T00:00:00.000Z</published>
-    <updated>2020-05-23T13:27:31.369Z</updated>
+    <updated>2020-05-24T05:54:59.664Z</updated>
     
     <summary type="html">
     
@@ -76,37 +113,6 @@
     
     
       <category term="更新" scheme="https://imsugar.top/tags/%E6%9B%B4%E6%96%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试数据</title>
-    <link href="https://imsugar.top/2020/05/19/test/"/>
-    <id>https://imsugar.top/2020/05/19/test/</id>
-    <published>2020-05-19T00:00:00.000Z</published>
-    <updated>2020-05-23T13:27:31.369Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;测试页面&quot;&gt;&lt;a href=&quot;#测试页面&quot; class=&quot;headerlink&quot; title=&quot;测试页面&quot;&gt;&lt;/a&gt;测试页面&lt;/h1&gt;&lt;p&gt;&lt;code&gt;git clone
-        
-      
-    
-    </summary>
-    
-    
-      <category term="code" scheme="https://imsugar.top/categories/code/"/>
-    
-    
-      <category term="数据集" scheme="https://imsugar.top/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
-    
-      <category term="方案" scheme="https://imsugar.top/tags/%E6%96%B9%E6%A1%88/"/>
-    
-      <category term="学习" scheme="https://imsugar.top/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
