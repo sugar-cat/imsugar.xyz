@@ -111,6 +111,7 @@ plugin:
   - hexo-asset-image
   - hexo-prism-plugin
   - hexo-toc
+  # - hexo-tag-cplayer
   # ... other plugins you'd like to enable
 
 # Generate archive page
