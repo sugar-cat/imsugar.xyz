@@ -25,10 +25,10 @@
 </blockquote>
 
     <div class="cplayer-template"
-      id="cplayer-54468259"
-      data-id="cplayer-54468259"
+      id="cplayer-00849382"
+      data-id="cplayer-00849382"
       data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
-      data-ids=[446935665,477310237]
+      data-ids=[446935665]
       data-autoplay="false"
       style="position: relative"
     ></div>
@@ -58,7 +58,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-54468259"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-00849382"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -78,8 +78,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-54468259"] = new cplayer({
-            element: document.getElementById("cplayer-54468259"),
+          window.cplayerList["cplayer-00849382"] = new cplayer({
+            element: document.getElementById("cplayer-00849382"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -156,9 +156,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-54468259"].add163(446935665),window.cplayerList["cplayer-54468259"].add163(477310237)
+          window.cplayerList["cplayer-00849382"].add163(446935665)
 
-          let player = window.cplayerList["cplayer-54468259"]
+          let player = window.cplayerList["cplayer-00849382"]
           player.to(1)
           player.remove(player.playlist[0])
         }
@@ -177,9 +177,9 @@
 
 <h4 id="个人说明-✨"><a href="#个人说明-✨" class="headerlink" title="个人说明 ✨"></a>个人说明 ✨</h4><blockquote>
 <ul>
-<li><strong>格  言</strong>：     愿你归来还是那个少年~</li>
-<li><strong>生  日</strong> ：    一个不愿透漏的90后</li>
-<li><strong>工作状态</strong>：求职中（目标是努力贴合自己想去做的）</li>
+<li><strong>格  言</strong>：     愿你历尽千帆，归来仍是少年</li>
+<li><strong>生  日</strong> ：    90后</li>
+<li><strong>工作状态</strong>：     求职中（目标是努力贴合自己想去做的）</li>
 </ul>
 </blockquote>
 <h4 id="个人最爱-🎡"><a href="#个人最爱-🎡" class="headerlink" title="个人最爱 🎡"></a>个人最爱 🎡</h4><table>
@@ -217,6 +217,8 @@
 
 
 <style>
+
+  /*- 477310237*/
     table {
         margin-left: 50px;
     }
