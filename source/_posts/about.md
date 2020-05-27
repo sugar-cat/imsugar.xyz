@@ -1,7 +1,7 @@
 ---
 title: 个人博客
 date: 2020-05-22
-categories: [blog]
+categories: [Blog]
 tags: [更新]
 ---
 

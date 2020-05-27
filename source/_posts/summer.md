@@ -1,7 +1,7 @@
 ---
 title: 这个夏日
 date: 2020-05-24
-categories: [sweety]
+categories: [Sweety]
 tags: [随笔]
 ---
 

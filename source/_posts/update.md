@@ -1,7 +1,7 @@
 ---
 title: 更新日记
 date: 2020-05-20
-categories: [blog]
+categories: [Blog]
 tags: [更新]
 ---
 
