@@ -46,12 +46,9 @@
 }
 
 .lSSlideWrapper .lSSlide {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     -webkit-transition: all 1s;
-    transition-property: height, -webkit-transform;
-    transition-property: transform, height;
-    transition-property: transform, height, -webkit-transform
+    transition-property: transform, height
 }
 
 .lSSlideWrapper .lSFade > * {
