@@ -33,8 +33,6 @@ tags: [更新]
 {% raw %}
 
 <style>
-
-  /*- 477310237*/
     table {
         margin-left: 50px;
     }
@@ -43,5 +41,4 @@ tags: [更新]
     font-weight: bold;
 }
 </style>
-
 {% endraw %}
