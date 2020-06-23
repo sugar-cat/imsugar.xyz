@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="zh-CN"><!--
+             -. .                                        
+       _____   ',' ,                                    
+     ,'     ,'   ', ',                                  
+   ,'     ,'      |  |                                  
+   \       \       |  |                                  
+     \ /^\   \    ,' ,'                                  
+           \   \ ,' ,'      L'Internationale,            
+     / ~-.___\.-'  ,'            Sera le genre humain.   
+   /   .______.- ~ \                                     
+ /   /'          \   \                                   
+ \./               \/'                                   
+                                                         
+--><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Sugar Cat"><title>H中系列·2--H中两三事 · Hexo</title><meta name="description" content="(function(){
+
+        let getLyric = id =&gt; {
+          return new Promise((resolve, reject) =&gt; {
+            fetch(&quot;https://api.imjad.cn/cloudmusic/?t"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/valine.min.js"></script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><span id="hitokoto" class="donate-address"> </span><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">你问我全世界哪里最美，答案是你身边</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">糖猫的夏天</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/2020/05/22/about">关于</a></li><li class="soc"><a href="https://github.com/sugar-cat" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><h1 class="post-title">H中系列·2--H中两三事</h1><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-06-06</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/Novel/" title="Novel" class="a-tag">Novel</a><span>&nbsp;</span><a href="/categories/Novel/Move/" title="Move" class="a-tag">Move</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/H中/" title="H中" class="a-tag">H中</a><span>&nbsp;</span><a href="/tags/连载/" title="连载" class="a-tag">连载</a><span>&nbsp;</span><a href="/tags/校园/" title="校园" class="a-tag">校园</a><span>&nbsp;</span></span></p><p class="post-abstract">
+    <div class="cplayer-template"
+      id="cplayer-83210813"
+      data-id="cplayer-83210813"
+      data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
+      data-ids=[1354221306]
+      data-autoplay="false"
+      style="position: relative"
+    ></div>
+    <script>
+      (function(){
+
+        let getLyric = id => {
+          return new Promise((resolve, reject) => {
+            fetch("https://api.imjad.cn/cloudmusic/?type=lyric&id=" + id).then(res => {
+              return res.json()
+            }).then(data => {
+              // console.log(data)
+              if(!data.lrc){
+                data = Object.assign(data, {
+                  lrc: {lyric: '[00:00.00]找不到歌词的说…(⊙﹏⊙)[99:00.00]'},
+                  tlyric: {lyric: '[00:00.00]翻译不存在的说…╮(╯▽╰)╭[99:00.00]'}
+                })
+              }
+              let obj = {
+                lyric: data.lrc.lyric,
+                tlyric: data.tlyric.lyric
+              }
+              resolve(obj);
+            })
+          })
+        }
+
+        function loadcplayer() {
+          if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
+          if (typeof window.cplayerList["cplayer-83210813"] !== 'undefined') return;
+          if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
+            if (!id) throw new Error("Unable Property.");
+            let lyric = await getLyric(id);
+            // console.log(lyric)
+
+            return fetch("https://api.imjad.cn/cloudmusic/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
+              let obj = {
+                name: data.songs[0].name,
+                artist: data.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+                poster: data.songs[0].al.picUrl,
+                lyric: lyric.lyric,
+                sublyric: lyric.tlyric,
+                src: 'https://api.imjad.cn/cloudmusic/?type=song&raw=true&id=' + id
+              }
+              this.add(obj);
+              return obj;
+            }.bind(this))
+          }
+
+          window.cplayerList["cplayer-83210813"] = new cplayer({
+            element: document.getElementById("cplayer-83210813"),
+            playlist: [{"name":"loading...","artist":"loading..."}],
+            generateBeforeElement: false,
+            deleteElementAfterGenerate: false,
+            autoplay: false,
+            zoomOutKana: true,
+            style: `c-player {
+                      font-size: 16px !important;
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: auto;
+                      max-width: 550px;
+                      margin: 30px auto;
+                    }
+                    c-player .cp-controls{
+                      user-select: none;
+                    }
+                    c-player .cp-lyric{
+                      width: 100%;
+                      margin: 0.41667em 0;
+                    }
+                    c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                      margin-left: 0.8em;
+                    }
+                    @media (max-width: 768px) {
+                      c-player{
+                        font-size: 12px !important;
+                        left: auto;
+                        transform: none;
+                        width: 100%;
+                        margin: 10px auto;
+                      }
+                      c-player .cp-mainbody{
+                        min-height: 5.16667em;
+                      }
+                      c-player .cp-poster{
+                        width: 5.16667em;
+                        height: 5.16667em;
+                      }
+                      c-player .cp-center-container{
+                        height: 5.16667em;
+                      }
+                      c-player .cp-play-button, c-player .cp-volume-button, c-player .cp-prev-button, c-player .cp-list-button, c-player .cp-mode-button, c-player .cp-next-button{
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-icon, c-player .cp-prev-icon, c-player .cp-next-icon, c-player .cp-volume-icon, c-player .cp-random-icon, c-player .cp-single-icon, c-player .cp-loop-icon, c-player .cp-list-icon{
+                        height: 1.54167em;
+                        width: 1.54167em;
+                      }
+                      c-player .cp-play-button{
+                        height: 2.8em;
+                        width: 2.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon{
+                        margin: 0.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                        margin: 0.7875em;
+                        margin-left: 1em;
+                      }
+                      c-player .cp-volume-icon {
+                        width: 1.76667em;
+                      }
+                      c-player .cp-list-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-mode-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                    }
+                    `
+          });
+
+          window.cplayerList["cplayer-83210813"].add163(1354221306)
+
+          let player = window.cplayerList["cplayer-83210813"]
+          player.to(1)
+          player.remove(player.playlist[0])
+        }
+        
+        if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
+          var js = document.createElement("script");
+          js.src = 'https://cdn.jsdelivr.net/gh/MoePlayer/cPlayer/dist/cplayer.js';
+          js.id = "cplayer-script";
+          js.addEventListener("load", loadcplayer);
+          document.body.appendChild(js);
+        } else {
+          window.addEventListener("load", loadcplayer);
+        }
+      })()
+    </script>
+
+<h2 id="No-1-饭量"><a href="#No-1-饭量" class="headerlink" title="No.1 饭量"></a>No.1 饭量</h2><p>我这人从不挑食，主要是因为小时候在农村经常挨饿，所以我长大特别懂得粮食的珍贵。我奶奶的家教很严，只要我把饭倒在桌子上，她立马一个巴掌扇过来，吼道：“把它给我吃光！”从此以后，我只要一看见碗里的饭，我就有要把它吃完的冲动。我吃饭速度快，仿佛汽车踩了油门。每当别人还在夹菜的时候，我已经用手抹嘴巴，说：“我吃饱了，各位慢用。”不知道为什么，我每次吃完饭都感到特别踏实。或许我就是农民的命。正如《活着》里面的福贵说的：“饱着，真好！”</p>
+<p>刚进H中，我去买碗。，店员小姐给我挑了好几个我都伸出食指左右摇晃表示不够大。她一发狠钻进里屋，咣当乱响一阵子，终于拿出一个足有半个篮球的铁盆，对我说：“小兄弟，再大就只能用脸盆了。”我把碗带回寝室，他们都吓了一跳。六猴嘲笑着说：“陈文，你脸盆挺“袖珍”的呀！”还有的说：“陈文，你的碗都能当我碗他爹了。”说碗把他的碗往我的那一放，立刻互相吻合不差分毫天衣无缝。</p>
+<p>我的碗好处是给饭堂大妈一个视觉误差，她们分饭总是掂量着能把碗填过一半，因此我同样的价格总能比别人多上三分之一。宿舍同学恨得是咬牙切齿，都说饭堂婆在和我搞黄昏恋。但是他们哪里晓得我的苦衷，因为我吃得快，基本上风卷残云一扫而光。然后大部分时间看他们对着饭盆埋头苦干。他们咬断骨头的声音、吮吸汤水的声音、大口嚼饭的声音像堆蚊子一样在我耳边嗡嗡作响，撩得我是浑身瘙痒口水直流。很多同学都怕和我一起聚餐，从战斗力上说，我能一个顶仨，而且我看见好吃的东西就不喜欢说话，只要一声令下我立马像是放风的犯人一样拼命开吃。而其他人则像未出阁的少女一样羞答答还在寒暄着。等他们领悟过来，已经只剩下半壁江山在那里苟延残喘。</p>
+<p>后来一段时间，我的饭量突然下降，比美国股市跌的还快。因为我喜欢了一个女孩，性情开放身材火辣姓萧名晓。我对她是茶不思饭不想为伊消得人憔悴。宿舍几个看在眼里合写了一封情书送给她，邀她共进晚餐。那天我浓妆淡抹整得跟个人妖似的，而她则是素面朴实像是卸了妆的郭晶晶。我俩一坐定，我说：“你点吧。”她嫣然一笑，说：“你点吧，点什么就吃什么。”她这话像是像条引信一样点爆我的胃口。我冲服务员喊道：<br> “麻辣鸡翅、红烧牛肉、糖醋白菜……等我点完，她吓得不行，连服务员也吓了一哆嗦，上来问：“请问要准备几副碗筷？”我说没看见我们两个人吗？！他才讪讪走开。那天的碗特别小，不到一个拳头大。我隐隐约约添了八碗饭，我见萧晓不吃，就说吃吧，不然真的没有吃了。她被我逗得扑哧笑了。饭毕，她盯着我问：“你是属什么的？”我说属兔，她故作惊奇地说：“不对吧？属猪的吧？”说完我们都呵呵大笑。</p>
+<p>就这样简单，我就俘获一个少女的芳心。我的饭量也恢复正常，后来因为高考学习紧张导致饭量像是富贵大族家道中落，因为一到考试我就怕，一怕我就吃饭。萧晓说你放心吧一切都会过去的。高考那两天，学校破天荒杀鸡宰鹅招待我们，宿舍几个吃得是狼吞虎咽津津有味，我看着满盆的美味，那食欲就像国足水平怎么提都提不上去。我妈知道这事，买了五花八门的开胃药给我吃，我估计我当时肚子的酸碱度绝对低于硫酸。我想完了，出师未捷身先死，常使我妈泪满襟。后来实在不行，只好葡萄糖输液，总算熬了过去。之后我的饭量一蹶不振雄风不再，基本维持在五两以内，直到今天我每每看见别人比我吃得多吃得狠就无比羡慕，然后感叹：“饱着，真好！”</p>
+<h2 id="No-2-小吃"><a href="#No-2-小吃" class="headerlink" title="No.2 小吃"></a>No.2 小吃</h2><p>H中地处黄金地段风水楼台，因此各路商贩绞尽脑汁在周围见缝插针生根发芽，一到星期六晚上，学校正门面前方圆几里站满学生人潮人涌波浪起伏煞是壮观。我们的校服从头红到脚不搭半点杂色，因此站在楼上远远望去仿佛毛主席在检阅红卫兵，一片火红火红连牛见了都不知道找谁去撞。</p>
+<p>这是小吃的海洋！萧晓喜欢牵我的手在里面晃来荡去，一圈逛下来，我的手上布满各种小吃遗留的残渣。不知道为什么，我对小吃不感冒。萧晓说我是假正经，我个人认为，我喜欢吃饭是因为小时候饿怕了知道生活的不容易。但不代表我就喜欢小吃。好比我热爱中国正统文学，但不是来者不拒照单全收……还没说完，萧晓立刻拿一块豆腐塞到我嘴巴。</p>
+<p>这里的小吃多如九牛二虎的毛。如果按等差数列堆叠起来，起码能有两座金字塔。烤的炸的腌的、泡的炊的晒的、方的圆的棱的、辣的酸的甜的，是应有尽有数不胜数，吃到嘴巴烂都吃不完。比如腌萝卜，我真的不知道外面那些七八十岁的老太婆怎么能每天按时拿出两个桶的货来供<br> 应我们，单是切都是累死人的啊！</p>
+<p>星期天离上课还有一段时间，教室里吃零食的声音此起彼伏一浪胜过一浪，各种味道混在一起天花板的电风扇吹几天都吹不走。连墙壁都嗅出酸辣味来。恐怖的是，作为文科生他们吃完还要发酸一阵，吟诗作对让我想吐。比如有个刚消灭十串考牛肉和一杯加大奶茶，拍拍肚皮说：“神仙也不过如此啊！”有个为“武大饼”做诗：此饼只应天上有，人间难得几回闻。可叹金莲蠢妇见，不知怜取眼前人。还有个更离谱，一杯西瓜被碰倒洒了一地，他借题发挥写出一片悼文来，词悲意切，把我们全班吓了一跳。从此不敢靠近此君，生怕整掉什么东西他写出一篇祭文来。</p>
+<p>有过一次，学校明令禁止带零食到学校。门卫负责搜查，不到一个上午，搜刮的零食能开个店。看着这么多民脂民膏，心痛的同学们和门卫展开了走私和反走私的双方拉锯战。技高一筹的我们施展人海战术，十几个一拥而上，门卫只感到一股人潮从身边流过，还没回过神来，手里就只剩下几个空塑料袋，而零食已经安全度过“海关”。或者派一个拿十几个塑料袋给门卫检查，剩下的暗渡陈仓从旁边溜走。后来学校不得以只好顺应大势开了一个商店，从而避免了外面民营企业垄断同学的口袋资本。</p>
+<p>萧晓特别喜欢小吃，她可以冷热酸甜想吃就吃。如果我和小吃同时掉到海里，她先救还真的说不准。为此我大伤脑筋，我扪心自问：我哪里比不上小吃了？有次她嘴里叼着一个鸡肉陷的小面包。我问她，我和它谁更重要？她笑了：“你真逗，哪有和面包吃醋的？”然后她又补了一句：“它能吃，比你重要多了，呵呵。”我心里一憋气，向老板吼道：“来两笼，吃死它！”老板应声而来，这时一个服务员端一盆热水经过滑了一跤，只听见萧晓“啊”了一声，接着是盆落地“恍当”一声，最后十几个小包全摔在我身上。萧晓一下子冲上来，急切地问：“陈文，伤了没有？你这个傻包，干嘛不躲呢？”我看着她说我想知道我和它，谁对你更重要？萧晓顿时哭了，抽泣地说着：“陈文，你…你…你这个傻包，呜呜…要是你……出事了，吃什么…都没有味道了！”</p>
+<h2 id="No-3-电筒"><a href="#No-3-电筒" class="headerlink" title="No.3 电筒"></a>No.3 电筒</h2><p>寝室电话一直仿佛都是丁哥的“私家车”，因为全层楼估计就他电话最多。而且大多是情话，很肉麻的那种。比如我想你了，你想我了吗。比如那天<br> 你走的时候我一下子就泪流满面了。丁哥除了情话就是废话。比如我今天吃了鸭肉，老贵了！你今天吃了什么呀？比如比如我现在十点零两分了，你的几点了？十点！不会吧？是你的慢了还是我的快了，要不你往前调一分我往后调一分这样我们就相同了……每当听到这些我都差点按捺不住跳下床把丁哥拉出床推下五楼。</p>
+<p>丁哥年龄在我们寝室高据榜首，比最小的大四岁，因此大家叫他丁哥。他的女友在E中，离H中不到五百米，却每晚不停地聊，烫到电话起火都不撒手。在认识萧晓之前，我一点都不明白丁哥的行为举止，后来我也忍不住给萧晓打了一个，挂了电话我特别兴奋，望着窗外的莽莽星空，一种幸福的感觉涌上心头。后来宿舍几个都有了那一位，电话一响，五六条人影同时跳起来去抢电话，没见过的还以为要地震了呢。最终眼疾手快且经验十足的丁哥一举夺魁，拽起就说：“我想死你了，怎么现在才来电话？”两秒钟后他转过脸无比沮丧地说：“六猴，找你的。”</p>
+<p>后来萧晓对我说怎么我打你们宿舍电话老师占线，我说没办法啊，在这么一个僧多粥少的年代。萧晓说万一我想你该怎么办？我说行，你给我两块钱，我去买彩票中他个五百万然后买两部手机，剩下的钱全部充花费。萧晓被我逗乐了，用手捶我的胸，说：“就你贫！”后来我出了一个主意，正是这个主意刮起一股电筒流行风。我和萧晓约定好，我们各自拿电筒照对方宿舍楼，转三圈表示我想你，两圈表示晚安。就这样，我们靠这个原始接头暗号每晚道别。</p>
+<p>有天晚上，我们道别之后，我突然发现对面又转了四圈。我第一感觉是完了，想：萧晓准被外星人虏走了，这应该是向我勒索的赎金吧。第二天，萧晓才告诉我说有个女生听她说她的事之后，她和她男友也用电筒信号。我问转四圈是什么意思，萧晓说了一句差点让我晕倒的话，她说：“为了避免重复，我让她用四圈，表示我好想你！”</p>
+<p>此事一传十十传百，只要晚上一熄灯，男女生两座楼的走廊上登时星光闪闪仿佛群魔乱舞，把宿舍管理员吓得腿软，以为是大家夜里起床看世界杯。学校领导却大为光火，说一定要严惩“元凶”。这句话把我萧晓吓得胆战心惊担惊受怕差点就要去自首。</p>
+<p>到了高二，我们买了手机，思念对方动动拇指一条短信可以搞定。但是每每想起以前的事，<br> 我还是感到莫名的心动和幸福。想到这里，萧晓一条短信发过来：“晚安，陈公子，明天星期六，陪我买小吃。”我吓了一个哆嗦，望着窗外的莽莽星空，久久还是不能入睡。</p>
+</p></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/05/30/postcard/p5/" title="联名活动-5月">下一篇: 联名活动-5月&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.min.js"></script><script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer></script></body></html>
