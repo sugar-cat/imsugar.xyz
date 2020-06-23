@@ -6,7 +6,7 @@ twitter: #sugar
 rss: #atom.xml
 weibo: #username/id
 instagram: #username
-github: sugar-cat
+github: #sugar-cat
 
 # Choose the comment service according to your need.
 # Please do not use the two services at the same time.
