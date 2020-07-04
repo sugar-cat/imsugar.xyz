@@ -25,8 +25,8 @@
 </blockquote>
 
     <div class="cplayer-template"
-      id="cplayer-40006794"
-      data-id="cplayer-40006794"
+      id="cplayer-47849392"
+      data-id="cplayer-47849392"
       data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
       data-ids=[446935665,1354221306,375100,477310237]
       data-autoplay="false"
@@ -58,7 +58,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-40006794"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-47849392"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -78,8 +78,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-40006794"] = new cplayer({
-            element: document.getElementById("cplayer-40006794"),
+          window.cplayerList["cplayer-47849392"] = new cplayer({
+            element: document.getElementById("cplayer-47849392"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -156,9 +156,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-40006794"].add163(446935665),window.cplayerList["cplayer-40006794"].add163(1354221306),window.cplayerList["cplayer-40006794"].add163(375100),window.cplayerList["cplayer-40006794"].add163(477310237)
+          window.cplayerList["cplayer-47849392"].add163(446935665),window.cplayerList["cplayer-47849392"].add163(1354221306),window.cplayerList["cplayer-47849392"].add163(375100),window.cplayerList["cplayer-47849392"].add163(477310237)
 
-          let player = window.cplayerList["cplayer-40006794"]
+          let player = window.cplayerList["cplayer-47849392"]
           player.to(1)
           player.remove(player.playlist[0])
         }
