@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="zh-CN"><!--
+             -. .                                        
+       _____   ',' ,                                    
+     ,'     ,'   ', ',                                  
+   ,'     ,'      |  |                                  
+   \       \       |  |                                  
+     \ /^\   \    ,' ,'                                  
+           \   \ ,' ,'      L'Internationale,            
+     / ~-.___\.-'  ,'            Sera le genre humain.   
+   /   .______.- ~ \                                     
+ /   /'          \   \                                   
+ \./               \/'                                   
+                                                         
+--><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Sugar Cat"><title>H中系列·4--H中两三事（续） · Hexo</title><meta name="description" content="(function(){
+
+        let getLyric = id =&gt; {
+          return new Promise((resolve, reject) =&gt; {
+            fetch(&quot;https://api.imjad.cn/cloudmusic/?t"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/valine.min.js"></script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><span id="hitokoto" class="donate-address"> </span><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">你问我全世界哪里最美，答案是你身边</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">糖猫的夏天</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/2020/05/22/about">关于</a></li><li class="soc"></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><h1 class="post-title">H中系列·4--H中两三事（续）</h1><p class="post-meta"><span class="date meta-item">发布于&nbsp;2020-12-27</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/Novel/" title="Novel" class="a-tag">Novel</a><span>&nbsp;</span><a href="/categories/Novel/Move/" title="Move" class="a-tag">Move</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/H中/" title="H中" class="a-tag">H中</a><span>&nbsp;</span><a href="/tags/连载/" title="连载" class="a-tag">连载</a><span>&nbsp;</span><a href="/tags/校园/" title="校园" class="a-tag">校园</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/86539244_p0.png" alt=""></p>
+
+    <div class="cplayer-template"
+      id="cplayer-38166351"
+      data-id="cplayer-38166351"
+      data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
+      data-ids=[479494742]
+      data-autoplay="false"
+      style="position: relative"
+    ></div>
+    <script>
+      (function(){
+
+        let getLyric = id => {
+          return new Promise((resolve, reject) => {
+            fetch("https://api.imjad.cn/cloudmusic/?type=lyric&id=" + id).then(res => {
+              return res.json()
+            }).then(data => {
+              // console.log(data)
+              if(!data.lrc){
+                data = Object.assign(data, {
+                  lrc: {lyric: '[00:00.00]找不到歌词的说…(⊙﹏⊙)[99:00.00]'},
+                  tlyric: {lyric: '[00:00.00]翻译不存在的说…╮(╯▽╰)╭[99:00.00]'}
+                })
+              }
+              let obj = {
+                lyric: data.lrc.lyric,
+                tlyric: data.tlyric.lyric
+              }
+              resolve(obj);
+            })
+          })
+        }
+
+        function loadcplayer() {
+          if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
+          if (typeof window.cplayerList["cplayer-38166351"] !== 'undefined') return;
+          if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
+            if (!id) throw new Error("Unable Property.");
+            let lyric = await getLyric(id);
+            // console.log(lyric)
+
+            return fetch("https://api.imjad.cn/cloudmusic/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
+              let obj = {
+                name: data.songs[0].name,
+                artist: data.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+                poster: data.songs[0].al.picUrl,
+                lyric: lyric.lyric,
+                sublyric: lyric.tlyric,
+                src: 'https://api.imjad.cn/cloudmusic/?type=song&raw=true&id=' + id
+              }
+              this.add(obj);
+              return obj;
+            }.bind(this))
+          }
+
+          window.cplayerList["cplayer-38166351"] = new cplayer({
+            element: document.getElementById("cplayer-38166351"),
+            playlist: [{"name":"loading...","artist":"loading..."}],
+            generateBeforeElement: false,
+            deleteElementAfterGenerate: false,
+            autoplay: false,
+            zoomOutKana: true,
+            style: `c-player {
+                      font-size: 16px !important;
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: auto;
+                      max-width: 550px;
+                      margin: 30px auto;
+                    }
+                    c-player .cp-controls{
+                      user-select: none;
+                    }
+                    c-player .cp-lyric{
+                      width: 100%;
+                      margin: 0.41667em 0;
+                    }
+                    c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                      margin-left: 0.8em;
+                    }
+                    @media (max-width: 768px) {
+                      c-player{
+                        font-size: 12px !important;
+                        left: auto;
+                        transform: none;
+                        width: 100%;
+                        margin: 10px auto;
+                      }
+                      c-player .cp-mainbody{
+                        min-height: 5.16667em;
+                      }
+                      c-player .cp-poster{
+                        width: 5.16667em;
+                        height: 5.16667em;
+                      }
+                      c-player .cp-center-container{
+                        height: 5.16667em;
+                      }
+                      c-player .cp-play-button, c-player .cp-volume-button, c-player .cp-prev-button, c-player .cp-list-button, c-player .cp-mode-button, c-player .cp-next-button{
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-icon, c-player .cp-prev-icon, c-player .cp-next-icon, c-player .cp-volume-icon, c-player .cp-random-icon, c-player .cp-single-icon, c-player .cp-loop-icon, c-player .cp-list-icon{
+                        height: 1.54167em;
+                        width: 1.54167em;
+                      }
+                      c-player .cp-play-button{
+                        height: 2.8em;
+                        width: 2.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon{
+                        margin: 0.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                        margin: 0.7875em;
+                        margin-left: 1em;
+                      }
+                      c-player .cp-volume-icon {
+                        width: 1.76667em;
+                      }
+                      c-player .cp-list-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-mode-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                    }
+                    `
+          });
+
+          window.cplayerList["cplayer-38166351"].add163(479494742)
+
+          let player = window.cplayerList["cplayer-38166351"]
+          player.to(1)
+          player.remove(player.playlist[0])
+        }
+        
+        if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
+          var js = document.createElement("script");
+          js.src = 'https://cdn.jsdelivr.net/gh/MoePlayer/cPlayer/dist/cplayer.js';
+          js.id = "cplayer-script";
+          js.addEventListener("load", loadcplayer);
+          document.body.appendChild(js);
+        } else {
+          window.addEventListener("load", loadcplayer);
+        }
+      })()
+    </script>
+
+<h2 id="No-1-军训"><a href="#No-1-军训" class="headerlink" title="No.1 军训"></a>No.1 军训</h2><p>话说H中的故事像是墙头柳絮吹走一拨又来一拨。今个儿我闲话少述单刀切题，先说这军训那叫一个五花八门。那时天空艳阳高照温度直逼太阳底线。那群教官肌肉长得是横七竖八八面威风，一看不是土匪就是强盗。我奶奶告诉我说，看到这种人能闪就闪，不能闪就像鸵鸟一样把头埋在地里面但求保命。第一天上午总教头训话，往舞台那么一站喇叭一喊，啪啦啪啦说半个钟，突然噗通几声连续晕倒好几位同学。不一会儿，救护车像是玩具车一样开到人群把人接走。场面登时混乱，总教头火了，骂道：看什么看？！没见过晕倒吗？今天下午我就让你们放倒几个。他一发话小教官们全当了真，训练起来那真不把咱当人看。</p>
+<p>下午训练，我们教官姓王，长得还算有人样，肥头大耳慈眉善目像是公益广告的形象大使。开始每个班像是豆腐一样被切成一块一块训练。可是篮球场实在太小，几个拼起来不够一支队伍跑几步。我们班跑在其他班后面，本来是两个班，跑着跑着就变成一个班。王教官大为恼火，肚子气得鼓鼓的差点要飘起来，吼道：见过乱的，没见过这么乱的！　</p>
+<p>他一发恨就把我们带到一个空地往死里整。单是罚站就半个钟，自己却拿着茶壶跟几个老太太吹牛，笑声把我弄得火大。接着抬腿，一抬又是半个钟，他还放狠话——谁要是动！不要怪我手下无情。我旁边那哥们是一胖子，刚抬不到一分钟立刻缴枪投降，两脚落地。王教官笑眯眯地问：“想动了是吧？”回答是。这时我只觉一道寒光闪过，手上鸡皮疙瘩被削平了一半。然后王教官说：十圈！最后胖子跑完田径场回来饭也不吃倒头就睡。我最怕向左向右转，多来几下我就分不清南北了。偏那教官像是好玩似的一喊就是好几天。害得我看到十字路口第一反应就是伸出左右手判断左右，再决定往哪走。晚上好多同学说梦话，有要砍教官的，有要炸学校的，有要泼硫酸的，有要告到中南海的，一觉醒来却什么也不记得了。</p>
+<p>检阅那天，老天像是得了尿频症，隔一个钟头下场雨，雨不大，像是小孩撒尿准备要完的样子。导致那些领头喊口令的也是笑料百出。有个左手敬礼跟右手一样孔武有力，然后喊：欢迎我们对领导进行检阅！我班那大姐也是紧张过度，她大声叫道：全体都有，立正！可能是忘了下一步该干什么，又喊：立正！立正！连喊三个立正，我们都在等待稍息，谁知她大吼一句：走！有个更绝，他是这样喊的：一二三四五六七八，二二三四五六七八……　</p>
+<p>自从经历军训我就得了后遗症，看见哨子就忍不住立正，看见军服大腿就软，看见绿色的东西就害怕靠近。等这些都烟消云散之后，已经过了三周。那时文学社也开始召新了。</p>
+<h2 id="No-2-召新"><a href="#No-2-召新" class="headerlink" title="No.2 召新"></a>No.2 召新</h2><p>中国行情就是这样，屁大的学校都会有个文学社。起的名字像厨房在炒菜咸淡不一味道不同。比如“春风”、“秋叶”、“百花”、“红壤”等就是能淡出个鸟来。比如“绿光城”、“宇宙风”、“星河”、“ 夜光” 等等，给我感觉像是在拍科幻片。还有一个叫做“北回归线”的，我就闹不明白了，地理好也不能这样瞎整吧。H中前辈们似乎感到大势已去潮流不可阻挡挡也挡不住，琢磨变天就憋出一个“大风大”的名字来。召新那天，师兄问的第一个问题就是：你觉得我们文学社名字怎么样？我含糊其辞地说：还行。师兄双眼一眯，笑着说：我希望你说实话。我把心一横，豁出去：我觉得起这个名字的人简直就是个傻冒！话一结束，师兄一把将我揽过去，声音有点哽咽地说：知音哪！</p>
+<p>第二步是才艺展示。写到这里我就就忍不住先笑一阵再写。第一个是小女生，一上台就朗诵《满江红》，十七句词念错了二十几个字。第二个长得够呛人，一副刚吃完辣椒很火爆的模样。渐渐往下的几乎没什么新意，像是鸭子被赶上台。这时，李觅荷上场了，只见她款款上台自我介绍。接着她说：我给大家念一首我写的诗。</p>
+<p>“ 你，</p>
+<p>　　 一会看我，</p>
+<p>　　 一会看云。</p>
+<p>　 　我觉得，</p>
+<p>　　 你看我时很远，</p>
+<p>　　 你看云时很近。”</p>
+<p>她还没念完，我隐隐约约觉得在哪里见过这首诗似的。当时几个师兄师姐一致看好她。为了把她风头盖过去，我一上台就耍宝。我本来想说诗，但我先不说诗而是说古董，说古董也不忙着说，而是说起景德镇的陶瓷，说陶瓷也不急着说，而是说起江南的天气，说天气也不忙着说而是说酿酒这个行当……总之等我把这一圈绕完之后，台下基本笑得不行。那个师兄指着我的脑袋说：“你这个机灵鬼！”</p>
+<h2 id="No-3-开会"><a href="#No-3-开会" class="headerlink" title="No.3 开会"></a>No.3 开会</h2><p>文学社男少女多，基本呈生态失衡情况。<br>社里基本两个派别，一是愤世嫉俗，他们常说：“这个问题要是放在国际上就是某某学说的一个流派；一是伤春悲秋，她们爱写：问君能有几多愁，独上高楼，蓦然回首，一枝红杏出墙头。社里最爱开的就是碰头会，无非是买些瓜子找个地方，吹牛一番。他们经常讨论的话题就是：韩寒郭敬明刘墉等等，反正什么流行谈什么。他们谈论不谈作品只谈人，比如韩寒赛车有多快，郭敬明和张悦然是否有一腿，刘墉的儿子有多高等等。对这些内容准确程度连香港狗仔队都自叹不如。</p>
+<p>我十分反感这种会议，让我觉得跟厕所里的苍蝇没有什么分别。但是我一直不舍得。离开原因就在李觅荷是会议记录员。为了接近她我耳朵可谓是受了极大煎熬。在遇见萧晓之前，我就暗恋她，之所以不敢表达。因为后来知道她如此大胆，竟然把顾城《远和近》当作自己写的，连死人也不放过。我估计这个女子心计堪比王熙凤。我怕这种人，我爷爷说过，男人很难收服比他有心计的女人。我怕跟她交往的话会死无葬身之地。</p>
+<p>可是每次看到她瓜子脸、柳叶眉、水蛇腰和杏桃腮，我的思念就像是打湿的心，真是痒得太难受了。她就像是一朵带刺的玫瑰，摘吧，不敢；不摘吧，不甘。最后我还是决定只身冒险，那天她在会上做记录，我悄悄递过一张字条，她看完脸就红了，然后回个纸条：对不起，我有男朋友了。</p>
+<h2 id="No-4-考试"><a href="#No-4-考试" class="headerlink" title="No.4 考试"></a>No.4 考试</h2><p>对于表白失败，我没太在意，因为考试来了。我考试很差，语文随便两下便是一百二；数学狠狠用力才上一百；地理、历史永远九十附近，政治最稳定，从没有超过七十。这些都像噩梦一样缠着我。H中考试时严时松，严肃时像在文革时代，放松时像在改革开放。而且高一高二交叉考试。有次我从这座教学楼最顶层跑到另外教学楼最顶层，差点没把我累死。</p>
+<p>曾有过段时间，我特怕考试，一到考试就厌食，后来注射葡萄糖水才好。拿起笔什么都记不起，答非所问，作文也是胡吹一通，成绩出来吓我一跳。看着试卷就想到肥沃的“红”土地，那叉叉全在嘲笑我说：傻眼了吧？选择题像买彩票从不选对，填空题像射箭射错了靶位，答不到点子上，问答题像在写小说假的要命，作文像在做值日报告正儿八经的，总之都乱了套。</p>
+<p>有次教室找到座位，我发现张纸条：师兄或是师姐不要动我书本。我明白是位置主人留<br> 下的，我赶紧回写：师弟或是师妹我没动你书本。第二天写着：谢谢你。我回写：不用写。第三天写着：你是师兄还是师姐？我回写：师兄，你是师弟还是师妹？第四天写着：我是师妹，你好。交个朋友吧。我回写：我是师兄，好的。第五天写着：我的QQ是1253074…我还看完，监考老师一把夺过：你还带纸条？校长三申五令不准带，你还带？胆子不小啊？！我一脸愕然看着她，无语。</p>
+<p>我以为将会有次艳遇就泡汤了。当时觉得真是无奈，高中基本在害怕中度过，没几天安稳，如今想起这些，依然后背发凉，萧晓曾对问我：下辈子你还做学生吗？我说：不了，这辈子受够了，下辈子我做你牛马吧？萧晓转身过去走开，“想得美！”她突然回头说。看我发愣，有补充一句：</p>
+<p>“你这头傻牛！走啊，今天星期天！陪我逛街去！”</p>
+</p></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2020/12/27/hschool/hs_5_something_2/" title="H中系列·4--H中两三事（再续）"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: H中系列·4--H中两三事（再续）</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/12/26/postcard/p12/" title="联名活动-12月">下一篇: 联名活动-12月&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.min.js"></script><script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer></script></body></html>
