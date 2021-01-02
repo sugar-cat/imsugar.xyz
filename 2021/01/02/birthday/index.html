@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="zh-CN"><!--
+             -. .                                        
+       _____   ',' ,                                    
+     ,'     ,'   ', ',                                  
+   ,'     ,'      |  |                                  
+   \       \       |  |                                  
+     \ /^\   \    ,' ,'                                  
+           \   \ ,' ,'      L'Internationale,            
+     / ~-.___\.-'  ,'            Sera le genre humain.   
+   /   .______.- ~ \                                     
+ /   /'          \   \                                   
+ \./               \/'                                   
+                                                         
+--><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Sugar Cat"><title>生日快乐 · Hexo</title><meta name="description" content="前言：祝我生日快乐呀~
+
+
+    
+    
+      (function(){
+
+        let getLyric = id =&gt; {
+          return new Promise((resolve, reject) =&gt; {
+            fetch(&quot;http"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/valine.min.js"></script><meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><span id="hitokoto" class="donate-address"> </span><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">你问我全世界哪里最美，答案是你身边</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">糖猫的夏天</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/2020/05/22/about">关于</a></li><li class="soc"></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><h1 class="post-title">生日快乐</h1><p class="post-meta"><span class="date meta-item">发布于&nbsp;2021-01-02</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/Sweety/" title="Sweety" class="a-tag">Sweety</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/随笔/" title="随笔" class="a-tag">随笔</a><span>&nbsp;</span></span></p><p class="post-abstract"><blockquote>
+<p>前言：祝我生日快乐呀~</p>
+</blockquote>
+
+    <div class="cplayer-template"
+      id="cplayer-53755384"
+      data-id="cplayer-53755384"
+      data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
+      data-ids=[59867]
+      data-autoplay="false"
+      style="position: relative"
+    ></div>
+    <script>
+      (function(){
+
+        let getLyric = id => {
+          return new Promise((resolve, reject) => {
+            fetch("https://api.imjad.cn/cloudmusic/?type=lyric&id=" + id).then(res => {
+              return res.json()
+            }).then(data => {
+              // console.log(data)
+              if(!data.lrc){
+                data = Object.assign(data, {
+                  lrc: {lyric: '[00:00.00]找不到歌词的说…(⊙﹏⊙)[99:00.00]'},
+                  tlyric: {lyric: '[00:00.00]翻译不存在的说…╮(╯▽╰)╭[99:00.00]'}
+                })
+              }
+              let obj = {
+                lyric: data.lrc.lyric,
+                tlyric: data.tlyric.lyric
+              }
+              resolve(obj);
+            })
+          })
+        }
+
+        function loadcplayer() {
+          if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
+          if (typeof window.cplayerList["cplayer-53755384"] !== 'undefined') return;
+          if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
+            if (!id) throw new Error("Unable Property.");
+            let lyric = await getLyric(id);
+            // console.log(lyric)
+
+            return fetch("https://api.imjad.cn/cloudmusic/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
+              let obj = {
+                name: data.songs[0].name,
+                artist: data.songs[0].ar.map(function(ar){ return ar.name }).join(','),
+                poster: data.songs[0].al.picUrl,
+                lyric: lyric.lyric,
+                sublyric: lyric.tlyric,
+                src: 'https://api.imjad.cn/cloudmusic/?type=song&raw=true&id=' + id
+              }
+              this.add(obj);
+              return obj;
+            }.bind(this))
+          }
+
+          window.cplayerList["cplayer-53755384"] = new cplayer({
+            element: document.getElementById("cplayer-53755384"),
+            playlist: [{"name":"loading...","artist":"loading..."}],
+            generateBeforeElement: false,
+            deleteElementAfterGenerate: false,
+            autoplay: false,
+            zoomOutKana: true,
+            style: `c-player {
+                      font-size: 16px !important;
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: auto;
+                      max-width: 550px;
+                      margin: 30px auto;
+                    }
+                    c-player .cp-controls{
+                      user-select: none;
+                    }
+                    c-player .cp-lyric{
+                      width: 100%;
+                      margin: 0.41667em 0;
+                    }
+                    c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                      margin-left: 0.8em;
+                    }
+                    @media (max-width: 768px) {
+                      c-player{
+                        font-size: 12px !important;
+                        left: auto;
+                        transform: none;
+                        width: 100%;
+                        margin: 10px auto;
+                      }
+                      c-player .cp-mainbody{
+                        min-height: 5.16667em;
+                      }
+                      c-player .cp-poster{
+                        width: 5.16667em;
+                        height: 5.16667em;
+                      }
+                      c-player .cp-center-container{
+                        height: 5.16667em;
+                      }
+                      c-player .cp-play-button, c-player .cp-volume-button, c-player .cp-prev-button, c-player .cp-list-button, c-player .cp-mode-button, c-player .cp-next-button{
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-icon, c-player .cp-prev-icon, c-player .cp-next-icon, c-player .cp-volume-icon, c-player .cp-random-icon, c-player .cp-single-icon, c-player .cp-loop-icon, c-player .cp-list-icon{
+                        height: 1.54167em;
+                        width: 1.54167em;
+                      }
+                      c-player .cp-play-button{
+                        height: 2.8em;
+                        width: 2.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon{
+                        margin: 0.8em;
+                      }
+                      c-player .cp-play-button .cp-play-icon.cp-play-icon-paused {
+                        margin: 0.7875em;
+                        margin-left: 1em;
+                      }
+                      c-player .cp-volume-icon {
+                        width: 1.76667em;
+                      }
+                      c-player .cp-list-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                      c-player .cp-mode-button {
+                        width: 1.54167em;
+                        height: 1.54167em;
+                      }
+                    }
+                    `
+          });
+
+          window.cplayerList["cplayer-53755384"].add163(59867)
+
+          let player = window.cplayerList["cplayer-53755384"]
+          player.to(1)
+          player.remove(player.playlist[0])
+        }
+        
+        if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
+          var js = document.createElement("script");
+          js.src = 'https://cdn.jsdelivr.net/gh/MoePlayer/cPlayer/dist/cplayer.js';
+          js.id = "cplayer-script";
+          js.addEventListener("load", loadcplayer);
+          document.body.appendChild(js);
+        } else {
+          window.addEventListener("load", loadcplayer);
+        }
+      })()
+    </script>.
+
+<p>​    2020很幸运与你们相识，这是来魔都这么多年第一次跟好朋友一起过生日，炒鸡开心，栗子的星云片，NINI的香港特色片，乐乐的Hello kitty片，都写满了祝福！还没回来的小声也送来了心意，还有找兄弟代购的年轮（死活都不收我钱说当作礼物），可惜一零还在复习考试没办法过来，不过期待我们联名所有人都回来相聚。今年的生日wish依旧归来仍是少年，满怀欢喜脱单，啊哈哈哈哈嗝儿(•̀ω•́)✧<br>PS：今天打卡小乔治咖啡馆，图六是从乐乐的朋友圈拿来的，p的<img src="birthday.assets/JS%7BH3PKBG%5B6_NFME4%FUH29.png" alt="img">好看！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1318(20210102-170936).JPG" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1306(20210102-191229).JPG" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1314.JPG" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1293(20201231-192756).JPG" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1319(20210102-171138)%20-%20%E5%89%AF%E6%9C%AC.JPG" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mumozi/Figure_bed/img/IMG_1316(20210102-191229).JPG" alt=""></p>
+</p></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/12/30/year_mayday/" title="跨年演唱會-五月天 &lt;好 好 好 想 見 到 你&gt;">下一篇: 跨年演唱會-五月天 <好 好 好 想 見 到 你>&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2021&nbsp;<a target="_blank" href="https://imsugar.top" rel="noopener noreferrer">Sugar Cat</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p><p> </p><a target="_blank" href="https://hitokoto.cn/" rel="noopener noreferrer">Hitokoto . (ฅ´ω`ฅ) </a></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.min.js"></script><script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer></script></body></html>
