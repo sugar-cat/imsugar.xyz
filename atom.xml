@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://imsugar.xyz/"/>
-  <updated>2021-01-17T03:27:13.593Z</updated>
+  <updated>2021-01-17T03:29:48.873Z</updated>
   <id>https://imsugar.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>域名变更——imsugar.xyz</title>
-    <link href="https://imsugar.xyz/2021/01/17/domain/"/>
-    <id>https://imsugar.xyz/2021/01/17/domain/</id>
+    <title>更新日记</title>
+    <link href="https://imsugar.xyz/2021/01/17/update/"/>
+    <id>https://imsugar.xyz/2021/01/17/update/</id>
     <published>2021-01-17T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,15 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;目前的域名截止2021.1.20号啦，到期后会自动更新为新域名~&lt;/p&gt;
-&lt;p&gt;新域名还是一样的名字，只不过后缀由top变更为xyz~&lt;/p&gt;
-&lt;p&gt;希望2021请多关照~&lt;/p&gt;
+          &lt;p&gt;2020-05-21&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更换cloudflare的DNS解析加速&lt;/p&gt;
 &lt;/blockquote&gt;
-
+&lt;p&gt;2020-05-19:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;博客建立，主程序Hexo&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;
         
       
     
@@ -53,7 +56,7 @@
     <link href="https://imsugar.xyz/2021/01/02/birthday/"/>
     <id>https://imsugar.xyz/2021/01/02/birthday/</id>
     <published>2021-01-02T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -66,7 +69,7 @@
 &lt;/blockquote&gt;
 
     &lt;div class=&quot;cplayer-template&quot;
-      id=&quot;cplayer-74078420&quot;
+      id=&quot;cplayer-69828632&quot;
      
         
       
@@ -86,7 +89,7 @@
     <link href="https://imsugar.xyz/2020/12/30/year_mayday/"/>
     <id>https://imsugar.xyz/2020/12/30/year_mayday/</id>
     <published>2020-12-30T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -117,7 +120,7 @@
     <link href="https://imsugar.xyz/2020/12/27/hschool/hs_7_something_4/"/>
     <id>https://imsugar.xyz/2020/12/27/hschool/hs_7_something_4/</id>
     <published>2020-12-27T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -153,7 +156,7 @@
     <link href="https://imsugar.xyz/2020/12/27/hschool/hs_6_something_3/"/>
     <id>https://imsugar.xyz/2020/12/27/hschool/hs_6_something_3/</id>
     <published>2020-12-27T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -189,7 +192,7 @@
     <link href="https://imsugar.xyz/2020/12/27/hschool/hs_5_something_2/"/>
     <id>https://imsugar.xyz/2020/12/27/hschool/hs_5_something_2/</id>
     <published>2020-12-27T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -225,7 +228,7 @@
     <link href="https://imsugar.xyz/2020/12/27/hschool/hs_4_something_1/"/>
     <id>https://imsugar.xyz/2020/12/27/hschool/hs_4_something_1/</id>
     <published>2020-12-27T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -261,7 +264,7 @@
     <link href="https://imsugar.xyz/2020/12/26/postcard/p12/"/>
     <id>https://imsugar.xyz/2020/12/26/postcard/p12/</id>
     <published>2020-12-26T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -299,7 +302,7 @@
     <link href="https://imsugar.xyz/2020/10/24/1024/"/>
     <id>https://imsugar.xyz/2020/10/24/1024/</id>
     <published>2020-10-24T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -312,7 +315,7 @@
 &lt;/blockquote&gt;
 
     &lt;div class=&quot;cplayer-template&quot;
-      id=&quot;cplayer-10825234&quot;
+      id=&quot;cplayer-25137750&quot;
      
         
       
@@ -332,7 +335,7 @@
     <link href="https://imsugar.xyz/2020/10/08/lusihao/"/>
     <id>https://imsugar.xyz/2020/10/08/lusihao/</id>
     <published>2020-10-08T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -360,7 +363,7 @@
     <link href="https://imsugar.xyz/2020/08/08/postcard/p8_8/"/>
     <id>https://imsugar.xyz/2020/08/08/postcard/p8_8/</id>
     <published>2020-08-08T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -398,7 +401,7 @@
     <link href="https://imsugar.xyz/2020/07/04/postcard/p7/"/>
     <id>https://imsugar.xyz/2020/07/04/postcard/p7/</id>
     <published>2020-07-04T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -435,7 +438,7 @@
     <link href="https://imsugar.xyz/2020/07/02/2020_/"/>
     <id>https://imsugar.xyz/2020/07/02/2020_/</id>
     <published>2020-07-02T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -465,7 +468,7 @@
     <link href="https://imsugar.xyz/2020/06/25/hschool/hs_3_girls/"/>
     <id>https://imsugar.xyz/2020/06/25/hschool/hs_3_girls/</id>
     <published>2020-06-25T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -498,7 +501,7 @@
     <link href="https://imsugar.xyz/2020/06/06/hschool/hs_2_something/"/>
     <id>https://imsugar.xyz/2020/06/06/hschool/hs_2_something/</id>
     <published>2020-06-06T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -508,8 +511,8 @@
         
           
     &lt;div class=&quot;cplayer-template&quot;
-      id=&quot;cplayer-75384233&quot;
-      data-id=&quot;cplayer-75384233&quot;
+      id=&quot;cplayer-93000471&quot;
+      data-id=&quot;cplayer-93000471&quot;
      
         
       
@@ -535,7 +538,7 @@
     <link href="https://imsugar.xyz/2020/05/30/postcard/p5/"/>
     <id>https://imsugar.xyz/2020/05/30/postcard/p5/</id>
     <published>2020-05-30T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -573,7 +576,7 @@
     <link href="https://imsugar.xyz/2020/05/29/hschool/hs_1_arts/"/>
     <id>https://imsugar.xyz/2020/05/29/hschool/hs_1_arts/</id>
     <published>2020-05-29T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -583,8 +586,8 @@
         
           
     &lt;div class=&quot;cplayer-template&quot;
-      id=&quot;cplayer-41639394&quot;
-      data-id=&quot;cplayer-41639394&quot;
+      id=&quot;cplayer-04052088&quot;
+      data-id=&quot;cplayer-04052088&quot;
      
         
       
@@ -610,7 +613,7 @@
     <link href="https://imsugar.xyz/2020/05/28/online_mayday/"/>
     <id>https://imsugar.xyz/2020/05/28/online_mayday/</id>
     <published>2020-05-28T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -638,7 +641,7 @@
     <link href="https://imsugar.xyz/2020/05/24/summer/"/>
     <id>https://imsugar.xyz/2020/05/24/summer/</id>
     <published>2020-05-24T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
@@ -651,7 +654,7 @@
 &lt;/blockquote&gt;
 
     &lt;div class=&quot;cplayer-template&quot;
-      id=&quot;cplayer-95588240&quot;
+      id=&quot;cplayer-12632097&quot;
      
         
       
@@ -671,7 +674,7 @@
     <link href="https://imsugar.xyz/2020/05/22/about/"/>
     <id>https://imsugar.xyz/2020/05/22/about/</id>
     <published>2020-05-22T00:00:00.000Z</published>
-    <updated>2021-01-17T03:27:13.593Z</updated>
+    <updated>2021-01-17T03:29:48.873Z</updated>
     
     <summary type="html">
     
