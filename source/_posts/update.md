@@ -1,6 +1,6 @@
 ---
 title: 更新日记
-date: 2020-05-20
+date: 2021-01-17
 categories: [Blog]
 tags: [更新]
 ---
@@ -12,3 +12,7 @@ tags: [更新]
 2020-05-19:
 
 > 博客建立，主程序Hexo
+
+2021-01-17:
+
+> 域名变更，imsugar.top 变更为insugar.xyz
