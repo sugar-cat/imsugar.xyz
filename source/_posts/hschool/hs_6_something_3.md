@@ -1,5 +1,5 @@
 ---
-title: H中系列·4--H中两三事（续啊续）
+title: H中系列·6--H中两三事（续啊续）
 date: 2020-12-27
 categories: [Novel,Move]
 tags: [H中,连载,校园]
