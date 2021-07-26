@@ -30,8 +30,8 @@
 </blockquote>
 
     <div class="cplayer-template"
-      id="cplayer-82200150"
-      data-id="cplayer-82200150"
+      id="cplayer-52422489"
+      data-id="cplayer-52422489"
       data-playlist=%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D
       data-ids=[1364274530]
       data-autoplay="false"
@@ -63,7 +63,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-82200150"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-52422489"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -83,8 +83,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-82200150"] = new cplayer({
-            element: document.getElementById("cplayer-82200150"),
+          window.cplayerList["cplayer-52422489"] = new cplayer({
+            element: document.getElementById("cplayer-52422489"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -161,9 +161,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-82200150"].add163(1364274530)
+          window.cplayerList["cplayer-52422489"].add163(1364274530)
 
-          let player = window.cplayerList["cplayer-82200150"]
+          let player = window.cplayerList["cplayer-52422489"]
           player.to(1)
           player.remove(player.playlist[0])
         }
