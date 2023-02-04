@@ -91,22 +91,32 @@ module.exports = function (args, contents) {
           })
         }
 
+        let getSong = id => {
+          return new Promise((resolve, reject) => {
+            fetch("https://api.obfs.dev/api/netease/song?id=" + id).then(res => {
+              return res.json()
+            }).then(data => {
+              // console.log(data)
+              resolve(data);
+            })
+          })
+        }
+
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
           if (typeof window.cplayerList[${JSON.stringify(targetID)}] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
-            // console.log(lyric)
-
-            return fetch("https://api.imjad.cn/cloudmusic/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
+            let song = await getSong(id);
+            return fetch("https://api.obfs.dev/api/netease/detail?id=" + id).then(function(res){return res.json()}).then(function(data){
               let obj = {
                 name: data.songs[0].name,
                 artist: data.songs[0].ar.map(function(ar){ return ar.name }).join(','),
                 poster: data.songs[0].al.picUrl,
                 lyric: lyric.lyric,
                 sublyric: lyric.tlyric,
-                src: 'https://api.imjad.cn/cloudmusic/?type=song&raw=true&id=' + id
+                src: song.data[0].url
               }
               this.add(obj);
               return obj;

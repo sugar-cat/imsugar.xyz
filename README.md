@@ -1,4 +1,8 @@
 # 更新日记
+
+ - 2023/2/5 更换网易云音乐接口
+ `https://api.obfs.dev/docs#tag/Netease/operation/song_api_netease_song_get`
+ 
  - 2020/5/20 更换cloudflare的DNS解析加速
  - 域名变更
 
